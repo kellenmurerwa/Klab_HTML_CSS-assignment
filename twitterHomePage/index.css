@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    height: 100vh;
+}
+
+.left-sidebar, .main-content, .right-sidebar {
+    padding: 20px;
+}
+
+.left-sidebar {
+    background-color: #0000;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu .logo {
+    width: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu ul li:hover {
+    background-color: #1D9BF0;
+}
+
+.tweet-btn {
+    background-color: #1D9BF0;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main-content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .tabs span {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #1D9BF0;
+}
+
+.tweet-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tweet-box textarea {
+    flex-grow: 1;
+    background-color: #22303C;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.tweet-box button {
+    background-color: #1D9BF0;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.feed .tweet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #38444D;
+}
+.profy{
+    display: flex;
+}
+
+.feed .tweet img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.right-sidebar {
+    background-color:#262626;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #22303C;
+    color: #fff;
+}
+
+.trends ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trends ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #38444D;
+}
